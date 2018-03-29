@@ -81,6 +81,7 @@
         value="classpath:mybatis/*/*.xml"指的是classpath(类路径)下com.zp.mapping包中的所有xml文件
         UserMapper.xml位于com.zp.mapping包下，这样UserMapper.xml就可以被自动扫描
          -->
+         <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"></property>
         <property name="mapperLocations" value="classpath:mybatis/*/*.xml" />
     </bean>
     <!-- 配置扫描器 -->
